@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刀劍學園</title>
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="./css/swiper-bundle.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="https://www.e336.fun/?utm_source=LP_SAO" target="_blank"><h1 class="logo"><img src="./images/H365-Logo.png"></h1></a>
+            <nav class="nav-bar">
+                <ul>
+                    <a href="#top-bn"><li><img src="./images/navbar-top.png" alt="首頁"></li></a>
+                    <a href="#videoarea"><li><img src="./images/navbar-gamevideo.png" alt="遊戲影片"></li></a>
+                    <a href="#promo-area"><li><img src="./images/navbar-event.png" alt="獨家活動"></li></a>
+                    <a href="#story-area"><li><img src="./images/navbar-story.png" alt="世界觀"></li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="top-bn" id="top-bn">
+        <div class="top-videobg">
+            <video class="videobg" width="1920" autoplay="true" loop="true" muted="false" preload="auto"  src="./images/frontpage_video.mp4"></video>
+        </div>
+        <div class="top-bn-container">
+            <div class="btn-container">
+                <div class="btn-group" data-aos="fade-left">
+                    <a href="#">
+                        <img src="./images/btn-ios.png"></a>
+                    <a href="https://sdk-api-uat.hbhhslzp.com/game-apk/SAO_h365_prod_0222.apk" class="btn-bling">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <img src="./images/btn-android.png"></a>
+                    <a href="https://t.me/h365SAO">
+                        <img src="./images/btn-tg.png"></a>
+                    <a href="https://jq.qq.com/?_wv=1027&k=7Zd8BKDc"><img src="./images/btn-QQ.png"></a>
+                </div>
+                <div class="tipbox">
+                    <a href="https://www.yeshen.com/cn/download/fullPackage?formal"><img src="./images/NOX.png" alt="NOX"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="videoarea" id="videoarea">
+        <div class="video-title" data-aos="fade-down">
+            <img src="./images/title.png" alt="title">
+        </div>
+        <div class="video-container">
+            <div class="video-box">
+                <video class="game-video" width="760" autoplay="true" loop="true" controls="true" muted="false" preload="auto" poster="./images/video-poster.jpg" src="https://static-apk.ycsbst.cn/takuxi-asset/pt-video/pv/sao_pv.mp4"></video>
+            </div>
+        </div>
+    </section>
+    <section class="promo-area" id="promo-area">
+        <div class="promo-girl">
+            <img src="./images/props-girl.png" alt="girl">
+        </div>
+            <div class="promo-contant">
+                <div class="promo-title" data-aos="fade-down">
+                    <img src="./images/props-title.png" alt="title">
+                </div>
+                <div class="promotxt-group" data-aos="fade-up">
+                    <div class="promotxt-contant">
+                        <span>2022/12/31</span>前加入
+                        <br>輸入限量活動序號!即可獲得豐富大獎!
+                        <div class="code-title">活動序號</div>
+                            <div class="code-contant">
+                                <p id="code-number">SAO888</p>
+                                <button type="copy-txt" class="copy-txt" onclick="copyEvent('code-number')">複製<br>代碼</button>
+                            </div>
+                        <div class="onlyword">僅限本平台下載</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="game-carousel">
+        <div class="carousel-contant">
+            <div class="carousel-title" data-aos="fade-down">
+                <img src="./images/title-introduce.png" alt="">
+            </div>
+            <div class="swiper-container swiper-theme">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/introduction-1.png"></div>
+                    <div class="swiper-slide"><img src="./images/introduction-2.png"></div>
+                    <div class="swiper-slide"><img src="./images/introduction-3.png"></div>
+                    <div class="swiper-slide"><img src="./images/introduction-4.png"></div>
+                    <div class="swiper-slide"><img src="./images/introduction-5.png"></div>
+                </div>
+                <div class="swiper-button-prev"><img src="./images/arrow-prev.png" alt="prev"></div>
+                <div class="swiper-button-next"><img src="./images/arrow-next.png" alt="next"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="story-area" id="story-area">
+        <div class="story-container">
+            <div class="story-title" data-aos="fade-down">
+                <img src="./images/title-story.png" alt="Title">
+            </div>
+            <div class="story-txtgroup">
+                <div class="txt-item" data-aos="fade-right">
+                    <img src="./images/Board1.png" alt="text">
+                </div>
+                <div class="txt-item" data-aos="fade-left">
+                    <img src="./images/Board2.png" alt="text">
+                </div>
+            </div>
+        </div>
+        <div class="story-girlgroup">
+            <div class="woman1"><img src="./images/story-girl-1.png" alt="woman" data-aos="fade-right"></div>
+            <div class="woman2"><img src="./images/story-girl-2.png" alt="woman" data-aos="fade-left"></div>
+        </div>
+    </section>
+    <footer class="footer-area">
+        <div class="footer-txt">
+            copyright ©H365 All rights reserved.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWXTYV7T5V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DWXTYV7T5V');
+    </script>
+    <script>
+        function copyEvent(id)
+        {
+            var str = document.getElementById(id);
+            window.getSelection().selectAllChildren(str);
+            document.execCommand("Copy")
+        }
+    </script>
+    <script>
+        AOS.init({
+            duration:1500,
+        });
+    </script>
+    <script>
+        var mySwiper = new Swiper(".swiper-container", {
+        loop:true,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+        grabCursor: true, 
+        autoplay: true,
+        dots:true,
+        autoplayTimeout: 8500,
+        smartSpeed: 450,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev", 
+        }
+      });
+    </script>
+
+</body>
+</html>

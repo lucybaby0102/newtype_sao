@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background: url("../images/navbar-bg.jpg") no-repeat;
+    background-position: bottom;
+}
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.nav-container a {
+    width: 160px;
+    padding-bottom: 1%;
+}
+.logo {
+    width: 100%;
+    max-width: 80px;
+    margin-left: auto;
+}
+
+@media screen and (min-width:484px) {
+    .logo {
+        max-width: 100px;
+    }
+}
+.nav-bar {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 3px;
+}
+.nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-bar ul a {
+    width: 18%;
+    max-width: 100px;
+    padding: 1%;
+    transition: .3s;
+}
+.nav-bar a:hover {
+    transform: scale(1.3, 1.3);
+}
+.nav-bar .back,
+.nav-bar .download {
+    width: 100%;
+    max-width: 170px;
+}
+.top-videobg {
+    width: 100%;
+    padding-bottom: 51.041667%;
+    position: relative;
+}
+
+.top-videobg video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.top-bn {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.top-bn-container {
+    width: 32%;
+    max-width: 1480px;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    bottom: 2%;
+    right: 10%
+}
+
+.top-bn-word {
+    width: 50%;
+    position: relative;
+}
+
+.btn-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-bling{
+        position: relative;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .btn-bling:hover{
+        background: #03e9f4;
+        color: #050801;
+        box-shadow: 0 0 5px #03e9f4,
+                    0 0 15px #03e9f4,
+                    0 0 25px #03e9f4,
+                    0 0 50px #03e9f4;
+    }
+    .btn-bling span{
+        position: absolute;
+        display: block;
+    }
+    .btn-bling span:nth-child(1){
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg,transparent,#03e9f4);
+        animation: animate1 1s linear infinite;
+    }
+    @keyframes animate1{
+        0%{
+            left: -100%;
+        }
+        50%,100%{
+            left: 100%;
+        }
+    }
+    .btn-bling span:nth-child(2){
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg,transparent,#03e9f4);
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.25s;
+    }
+    @keyframes animate2{
+        0%{
+            top: -100%;
+        }
+        50%,100%{
+            top: 100%;
+        }
+    }
+    .btn-bling span:nth-child(3){
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg,transparent,#03e9f4);
+        animation: animate3 1s linear infinite;
+        animation-delay: 0.50s;
+    }
+    @keyframes animate3{
+        0%{
+            right: -100%;
+        }
+        50%,100%{
+            right: 100%;
+        }
+    }
+    .btn-bling span:nth-child(4){
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg,transparent,#03e9f4);
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.75s;
+    }
+    @keyframes animate4{
+        0%{
+            bottom: -100%;
+        }
+        50%,100%{
+            bottom: 100%;
+        }
+    }
+.btn-group a {
+    width: 50%;
+    padding: 5px;
+}
+
+.tipbox {
+    width: 60%;
+}
+.videoarea {
+    width: 100%;
+    margin: auto;
+    padding: 5%;
+    background: url("../images/video-bg.jpg") no-repeat top; 
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    top: 20%;
+    right: 0;
+    left: 0;
+}
+
+.video-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.video-title {
+    width: 30%;
+    position: relative;
+    top: 8%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.video-bg{
+    width: 100%;
+}
+.video-box {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video-box video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.promo-area {
+    width: 100%;
+    background: url('../images/props-bg.jpg')no-repeat top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.promo-title{
+    position: relative;
+    left: -6%;
+}
+.promotxt-contant span {
+    color: #FF0;
+}
+
+.promo-girl {
+    width: 130%;
+    position: relative;
+    right: 10%;
+    transform: translateX(8%);
+    z-index: 1;
+}
+
+.promo-contant {
+    width: 65%;
+    transform: translateY(-4%);
+    padding-top: 5%;
+    position: relative;
+    right: 15%;
+    z-index: 10;
+}
+
+.promotxt-group {
+    background: url(../images/props-wordbg.png)no-repeat center;
+    background-size: 98% 100%;
+    margin: 2% 0;
+    padding: 10% 3%;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    color:#fff;
+}
+
+.code-title {
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.code-contant {
+    max-width: 320px;
+    min-height: 30px;
+    padding: 1% 3%;
+    border-radius: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+#code-number {
+    padding: 2% 6%;
+    margin: 0 6px;
+    position: relative;
+    color:#000;
+}
+
+.copy-txt {
+    border-radius: 10px;
+    padding: 1%;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+.onlyword {
+    font-size: 1.3vw;
+}
+.game-carousel,
+.story-area {
+    width: 100%;
+    background: url('../images/bn4-bg.jpg')repeat-y;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-contant {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.carousel-title {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.swiper-theme {
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 4%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-slide {
+    width: 100%;
+}
+.swiper-slide:nth-child(2n) {
+    width: 100%;
+}
+.swiper-slide:nth-child(3n) {
+    width: 100%;
+}
+.story-area {
+    width: 100%;
+    height: 100%;
+    max-height: 1080px;
+    overflow: hidden;
+}
+
+.story-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.story-title {
+    width: 50%;
+    margin: auto;
+    padding: 30px 0 10px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.story-txtgroup {
+    width: 45%;
+    max-width: 560px;
+    position: relative;
+    padding-top: 2%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+}
+
+.txt-item:nth-child(1) {
+    position: relative;
+    left: -20%;
+}
+
+.txt-item:nth-child(2) {
+    position: relative;
+    right: -30%;
+}
+
+.txt-item {
+    margin-bottom: 10%;
+}
+
+.story-girlgroup {
+    width: 121%;
+    display: flex;
+    justify-content: space-around;
+    transform: translate(-5%, 40px);
+}
+.woman1{
+    position: relative;
+    transform: translateX(-20%);
+    z-index: 1;
+}
+.woman2 {
+    height: 300px;
+    position: relative;
+}
+
+.footer-area {
+    width: 100%;
+    background: url('../images/footer-bg-s.jpg')repeat-x;
+}
+
+.footer-txt {
+    width: 100%;
+    text-align: center;
+    font-size: 100%;
+    padding: 20px;
+    color: #fff;
+}
